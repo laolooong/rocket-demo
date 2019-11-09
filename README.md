@@ -5,6 +5,7 @@ spring boot + gradle + docker
 1、远程部署前提需要开启docker远程访问功能
 
 CentOS 7 修改/usr/lib/systemd/system/docker.service文件，在ExecStart后面添加一行
+
 ExecStart=/usr/bin/dockerd  -H tcp://0.0.0.0:2375  -H unix:///var/run/docker.sock
 
 2、重启docker服务：
